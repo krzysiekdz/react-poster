@@ -40,6 +40,9 @@ Szczegóły filmu - w wyniku kliknięcia na zdjecie zostało ono powiekszone. Kl
 ![](http://i.imgur.com/Duo79j1.png)
 
 
+### Uruchamianie:
+serwer (https://github.com/kushalpandya/poster-server):
+node index.js
 
-
+następnie public/index.html - aplikacja Poster (wymaga połączenia z serwerem powyżej)
 
