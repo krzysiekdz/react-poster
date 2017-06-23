@@ -3,14 +3,15 @@ Poster
 
 originalny projekt na : https://github.com/kushalpandya/poster
 
-##paragraf
-#p
-###p
+## paragraf
+# p
+### p
 
 ala ma koty:
--cezara
--ludwika
--oskara
+
+- cezara
+- ludwika
+- oskara
 
 ala ma koty:
 -cezara
