@@ -1,7 +1,9 @@
 Poster
 ==============
 
-Aplikacja napisana przy pomocy bibliotek React i Redux. Wyświetla nowości filmowe, umożliwia przeszukiwanie bazy filmów (tmdb) oraz dodawanie i usuwanie filmów do listy filmów do obejrzenia. Kod umieszczony tutaj jest w calosci napisany przeze mnie, aczkolwiek wzorowałem się na identycznym projekcie (https://github.com/kushalpandya/poster). Projekt do działania wymaga uruchomionego serwera (https://github.com/kushalpandya/poster-server). Serwer korzystajac tmdb API (https://www.themoviedb.org/documentation/api) udostępnia aplikacji Poster wymienione wyżej uslugi.
+Aplikacja napisana przy pomocy bibliotek React i Redux (sierpień 2016, niestety nie dokumentowałem wtedy pracy w git). 
+
+Wyświetla nowości filmowe, umożliwia przeszukiwanie bazy filmów (tmdb) oraz dodawanie i usuwanie filmów do listy filmów do obejrzenia. Kod umieszczony tutaj jest w calosci napisany przeze mnie, aczkolwiek wzorowałem się na identycznym projekcie (https://github.com/kushalpandya/poster). Projekt do działania wymaga uruchomionego serwera (https://github.com/kushalpandya/poster-server). Serwer korzystajac z tmdb API (https://www.themoviedb.org/documentation/api) udostępnia aplikacji Poster wymienione wyżej uslugi. Aplikacja ta stanowi więc wygodny (i ładny :) ) interfejs do oferowanych przez serwer usług.
 
 
 Widok glowny aplikacji
