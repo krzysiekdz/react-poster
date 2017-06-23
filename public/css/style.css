@@ -1,0 +1,264 @@
+
+/* wielkosc dla linkow w menu */
+nav#poster-nav li a {
+	padding: 20px 15px;
+}
+
+/* kolor dla nawigacji*/
+#poster-nav {
+	background-color: rgb(69,118,139);
+	background-image: none;
+}
+
+/* efekty myszy dla pozycji menu*/
+#poster-nav li.active a, #poster-nav a:focus {
+	background-color:  rgb(94,170,202);
+}
+
+#poster-nav a:hover {
+	background-color: rgb(117,152,168);
+}
+
+/* usuniecie z navbar-brand efektow myszy */
+#poster-navbar-brand li.active a, #poster-navbar-brand a:focus {
+	background-color:  inherit;
+}
+
+#poster-navbar-brand a:hover {
+	background-color: inherit;
+}
+
+/* efekty myszy dla przycisku menu pomniejszonego*/
+#button-toggle:hover, #button-toggle:focus {
+	background-color: inherit;
+}
+
+/* zmniejszenie zajmowanego miejsca przez naglowek menu */
+ul#poster-navbar-brand {
+	display:inline;
+}
+
+/* stopka */
+.poster-footer {
+	padding-top: 50px;
+	background-color: rgb(69,118,139);
+	color: white;
+}
+
+/* pole wyszukiwania*/
+#poster-search {
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	background-color: inherit;
+}
+
+/* napis powitalny */
+.jumbotron > h2 {
+	color: black;
+	font-size: 3em;
+}
+
+/* minimalna wysokosc kontenera głównego z trescia */
+#content {
+	min-height: 600px;
+}
+
+/* pole z opisem filmu powinno zaiwerac pierwsze 3 linie*/
+p.poster-overview {
+	overflow: hidden;
+	height: 60px;
+}
+/* obraz tła dla movie card*/
+img.poster-img-back {
+	height: 300px;
+	width: 100%;
+	filter: blur(2px);
+	-webkit-filter: blur(2px);
+}
+/* szare tło gdy brak obrazka */
+div.poster-div-back {
+	height: 300px;
+	width: 100%;
+	background-color: lightgray;
+}
+/* obrazek glowny filmu*/
+img.poster-img-front {
+	position: absolute;
+	border: 2px solid white;
+	top: 10px;
+	left: 40px;
+	width: 150px;
+	height: 250px;
+}
+/* efekt najechania mysza na obrazek glowny */
+img.poster-img-front:hover {
+	box-shadow: 0px 0px 30px white;
+}
+/*styl dla elementu movie card*/
+div.poster-thumbnail {
+	padding: 0px;
+	box-shadow: 10px 10px 30px black;
+}
+/* element wyswietlajacy ocenę filmu */
+div.poster-vote-average {
+	position: absolute;
+	left: 80%;
+	top: 0px;
+	color: white;	
+	background-color: #E8BC2C;
+	width: 40px;
+	height: 65px;
+	border-radius:0 0 15px 15px;  
+	font-size: 1.2em; 
+	border: #F29B05 dashed 3px;
+	border-top: none;
+}
+/* gwiazda w ocenie filmu */
+.poster-vote-star {
+	font-size: 1.5em;
+}
+div.poster-vote-average:hover {
+	box-shadow: 0px 0px 20px white;
+}
+/* tytul filmu */
+.poster-movie-title {
+	color: inherit;
+	margin-bottom: 5px;
+	height: 30px;
+	overflow: hidden;
+	text-overflow: clip;
+}
+/* data produkcji filmu*/
+.poster-release-date {
+	color: lightgray;
+	font-size: 0.9em;
+}
+/* linia oddzielajaca opis filmu od daty i tytulu */
+.divider {
+	border: 1px solid lightgray;
+	border-top: none;
+	margin: 10px 0;
+}
+/*kontener zawierajacy movie-card - doanie marginesu dolnego*/
+.poster-movie-card {
+	margin-bottom: 40px;
+}
+/* zwiekszenie odstepu po prawej dla elementow po lewej */
+.poster-movie-card-left {
+	padding-right: 40px;
+}
+
+/* zwiekszenie odstepu po lewej dla elementow po prawej*/
+.poster-movie-card-right {
+	padding-left: 40px;
+}
+
+/* tooltip - wlasciwosci ogolne; dwie klasy - jedna aby wykrywac wejscie mysza, druga opisujaca sam tooltip */
+.poster-tooltip.poster-tooltip-text {
+	position: absolute;
+	padding: 5px;
+	width: 120px;
+	background-color: black;
+	color: white;
+	z-index: 1;
+	font-size: 0.8em;
+
+	visibility: hidden;
+}
+/* pokazanie tooltipa po wejsciu mysza - zalezy od klasy poster-tooltip - wtedy gdy wejdziemy na tego typu element, to jesli element ma klase poster-tooltip-text - odpala sie ta regula dla niego */
+.poster-tooltip:hover .poster-tooltip-text {
+	visibility: visible;
+}
+
+/* ustawienie położenia tooltipa dla vote */
+.poster-tooltip.poster-tooltip-text.poster-tooltip-vote {
+	left: 0px;
+	top: -40px;
+}
+
+/*dodanie trojkta dolnego pod wybranym tooltpiem*/
+.poster-tooltip .poster-tooltip-vote::after {
+    content: "";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 20%;
+    /*margin-left: -5px;*/
+    border-width: 10px;
+    /*background-color: red;*/
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+/* położenie tooltipa dla przycisku dodaj/usun/dodano */
+.poster-tooltip.poster-tooltip-text.poster-tooltip-btn {
+	left: 0px;
+	top: 520px;
+}
+
+/*dodanie trojkta gornego nad tooltpip-btn*/
+.poster-tooltip .poster-tooltip-btn::after {
+    content: "";
+    position: absolute;
+    top: -18px; 
+    left: 35%;
+    /*margin-left: -5px;*/
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
+div.div-btn {
+	width: 30px;
+}
+
+.glyphicon-ok {
+	color: green;
+}
+.glyphicon-remove {
+	color: red;
+}
+.glyphicon-plus {
+	color: blue;
+}
+
+.poster-loading-anim {
+	margin-top: 50px;
+	
+}
+
+@keyframes anim1 {
+	0% {transform: rotate(0deg);}
+	50% {transform: rotate(180deg);}
+	100% {transform: rotate(180deg);}
+}
+
+#hourglass {
+	width: 200px;
+	height: 200px;
+	margin-left: 40%;
+	animation: anim1 1s linear infinite;
+}
+
+#poster-loading-info {
+	text-align: center;
+	color: lightgray;
+	font-size: 1.2em;
+}
+
+#poster-movies-not-found {
+	padding-top: 100px;
+	margin: 0px;
+	color: gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
